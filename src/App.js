@@ -2,18 +2,21 @@ import React from 'react';
 import logo from './resources/logo.png';
 import './App.css';
 import Editor from './Editor';
-
+import config from './config';
 class App extends React.Component {
     constructor () {
         super();
         this.handleSubmit = this.handleSubmit.bind(this);
+        console.log('Test!!');
+
+        console.log(config.apiKey);
+        console.log(config.projectId);
     }
 
     // 버튼을 눌렀을 때 Action. 지금은 일단 콘솔 값을 확인만 함
     handleSubmit (e) {
         console.log(this, e);
     }
-
     // 익명 사용자 여부
     isAnonymous () {
         return true;

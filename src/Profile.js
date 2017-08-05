@@ -10,7 +10,7 @@ function Profile (isAnonymous) {
                     무엇을 공유할까요?
                 </div>
                 <div className="anonymous_name">
-                    윤성
+                    Anonymous
                 </div>
                 <div className="anonymous_img_wrap">
                     <img src={Anonymous} alt="profiles" className="anonymous_img"/>
